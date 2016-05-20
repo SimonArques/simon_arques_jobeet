@@ -1,0 +1,4 @@
+services:
+#    ens_simon.example:
+#        class: Ens\SimonBundle\Example
+#        arguments: ["@service_id", "plain_value", %parameter%]
