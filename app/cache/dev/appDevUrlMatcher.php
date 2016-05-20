@@ -105,6 +105,15 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
+        // ens_simon_arques_homepage
+        if (rtrim($pathinfo, '/') === '') {
+            if (substr($pathinfo, -1) !== '/') {
+                return $this->redirect($pathinfo.'/', 'ens_simon_arques_homepage');
+            }
+
+            return array (  '_controller' => 'Ens\\SimonArquesBundle\\Controller\\DefaultController::indexAction',  '_route' => 'ens_simon_arques_homepage',);
+        }
+
         // homepage
         if (rtrim($pathinfo, '/') === '') {
             if (substr($pathinfo, -1) !== '/') {
