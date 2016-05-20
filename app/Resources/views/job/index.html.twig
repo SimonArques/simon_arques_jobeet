@@ -8,15 +8,15 @@
 {% block content %}
     <div id="jobs">
         <table class="jobs">
-            {% for entity in jobs %}
+            {% for job in jobs %}
                 <tr class="{{ cycle(['even', 'odd'], loop.index) }}">
-                    <td class="location">{{ entity.location }}</td>
+                    <td class="location">{{ job.location }}</td>
                     <td class="position">
-                        <a href="{{ path('job_show', { 'id': entity.id }) }}">
-                            {{ entity.position }}
+                        <a href="{{ path('job_show', { 'id': job.id, 'company': job.companySlug, 'location': job.locationSlug, 'position': job.positionSlug}) }}">
+                            {{ job.position }}
                         </a>
                     </td>
-                    <td class="company">{{ entity.company }}</td>
+                    <td class="company">{{ job.company }}</td>
                 </tr>
             {% endfor %}
         </table>

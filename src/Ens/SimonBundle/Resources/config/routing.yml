@@ -4,4 +4,4 @@ ens_simon_job:
 
 ens_simon_homepage:
     path:     /
-    defaults: { _controller: EnsSimonBundle:Default:index }
+    defaults: { _controller: EnsSimonBundle:job:index }

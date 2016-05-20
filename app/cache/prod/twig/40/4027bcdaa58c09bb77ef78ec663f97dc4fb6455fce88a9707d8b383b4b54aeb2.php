@@ -8,15 +8,15 @@ class __TwigTemplate_020d1f278e68bcd898e469bf2550449e8723ae350533ad1286a5a329ad4
         parent::__construct($env);
 
         // line 1
-        $this->parent = $this->loadTemplate("base.html.twig", "job/new.html.twig", 1);
+        $this->parent = $this->loadTemplate("EnsSimonBundle::layout.html.twig", "job/new.html.twig", 1);
         $this->blocks = array(
-            'body' => array($this, 'block_body'),
+            'content' => array($this, 'block_content'),
         );
     }
 
     protected function doGetParent(array $context)
     {
-        return "base.html.twig";
+        return "EnsSimonBundle::layout.html.twig";
     }
 
     protected function doDisplay(array $context, array $blocks = array())
@@ -25,7 +25,7 @@ class __TwigTemplate_020d1f278e68bcd898e469bf2550449e8723ae350533ad1286a5a329ad4
     }
 
     // line 3
-    public function block_body($context, array $blocks = array())
+    public function block_content($context, array $blocks = array())
     {
         // line 4
         echo "    <h1>Job creation</h1>
@@ -70,9 +70,9 @@ class __TwigTemplate_020d1f278e68bcd898e469bf2550449e8723ae350533ad1286a5a329ad4
         return array (  51 => 13,  44 => 9,  39 => 7,  35 => 6,  31 => 4,  28 => 3,  11 => 1,);
     }
 }
-/* {% extends 'base.html.twig' %}*/
+/* {% extends 'EnsSimonBundle::layout.html.twig' %}*/
 /* */
-/* {% block body %}*/
+/* {% block content %}*/
 /*     <h1>Job creation</h1>*/
 /* */
 /*     {{ form_start(form) }}*/

@@ -10,6 +10,7 @@
     {% block stylesheets %}
         <link rel="stylesheet" href="{{ asset('bundles/enssimon/css/main.css') }}" type="text/css" media="all" />
     {% endblock %}
+
     {% block javascripts %}
     {% endblock %}
     <link rel="shortcut icon" href="{{ asset('bundles/enssimon/images/favicon.ico') }}" />
@@ -18,7 +19,7 @@
 <div id="container">
     <div id="header">
         <div class="content">
-            <h1><a href="{{ path('job_index') }}">
+            <h1><a href="{{ path('homepage') }}">
                     <img src="{{ asset('bundles/enssimon/images/logo.jpg') }}" alt="Jobeet Job Board" />
                 </a></h1>
 

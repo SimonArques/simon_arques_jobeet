@@ -8,15 +8,15 @@ class __TwigTemplate_20252e28334c3b2a5d1760d4eed8a2adff43c7e1c3b675a745eab9e5147
         parent::__construct($env);
 
         // line 1
-        $this->parent = $this->loadTemplate("base.html.twig", "job/edit.html.twig", 1);
+        $this->parent = $this->loadTemplate("EnsSimonBundle::layout.html.twig", "job/edit.html.twig", 1);
         $this->blocks = array(
-            'body' => array($this, 'block_body'),
+            'content' => array($this, 'block_content'),
         );
     }
 
     protected function doGetParent(array $context)
     {
-        return "base.html.twig";
+        return "EnsSimonBundle::layout.html.twig";
     }
 
     protected function doDisplay(array $context, array $blocks = array())
@@ -24,41 +24,41 @@ class __TwigTemplate_20252e28334c3b2a5d1760d4eed8a2adff43c7e1c3b675a745eab9e5147
         $this->parent->display($context, array_merge($this->blocks, $blocks));
     }
 
-    // line 3
-    public function block_body($context, array $blocks = array())
+    // line 5
+    public function block_content($context, array $blocks = array())
     {
-        // line 4
+        // line 6
         echo "    <h1>Job edit</h1>
 
     ";
-        // line 6
+        // line 8
         echo         $this->env->getExtension('form')->renderer->renderBlock((isset($context["edit_form"]) ? $context["edit_form"] : null), 'form_start');
         echo "
         ";
-        // line 7
+        // line 9
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock((isset($context["edit_form"]) ? $context["edit_form"] : null), 'widget');
         echo "
         <input type=\"submit\" value=\"Edit\" />
     ";
-        // line 9
+        // line 11
         echo         $this->env->getExtension('form')->renderer->renderBlock((isset($context["edit_form"]) ? $context["edit_form"] : null), 'form_end');
         echo "
 
     <ul>
         <li>
             <a href=\"";
-        // line 13
+        // line 15
         echo $this->env->getExtension('routing')->getPath("job_index");
         echo "\">Back to the list</a>
         </li>
         <li>
             ";
-        // line 16
+        // line 18
         echo         $this->env->getExtension('form')->renderer->renderBlock((isset($context["delete_form"]) ? $context["delete_form"] : null), 'form_start');
         echo "
                 <input type=\"submit\" value=\"Delete\">
             ";
-        // line 18
+        // line 20
         echo         $this->env->getExtension('form')->renderer->renderBlock((isset($context["delete_form"]) ? $context["delete_form"] : null), 'form_end');
         echo "
         </li>
@@ -78,12 +78,14 @@ class __TwigTemplate_20252e28334c3b2a5d1760d4eed8a2adff43c7e1c3b675a745eab9e5147
 
     public function getDebugInfo()
     {
-        return array (  62 => 18,  57 => 16,  51 => 13,  44 => 9,  39 => 7,  35 => 6,  31 => 4,  28 => 3,  11 => 1,);
+        return array (  62 => 20,  57 => 18,  51 => 15,  44 => 11,  39 => 9,  35 => 8,  31 => 6,  28 => 5,  11 => 1,);
     }
 }
-/* {% extends 'base.html.twig' %}*/
+/* {% extends 'EnsSimonBundle::layout.html.twig' %}*/
 /* */
-/* {% block body %}*/
+/* */
+/* */
+/* {% block content %}*/
 /*     <h1>Job edit</h1>*/
 /* */
 /*     {{ form_start(edit_form) }}*/

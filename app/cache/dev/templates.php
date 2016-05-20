@@ -79,6 +79,7 @@
   'DoctrineBundle:Collector:db.html.twig' => 'C:\\wamp\\www\\simon_arques_jobeet\\vendor\\doctrine\\doctrine-bundle/Resources/views/Collector/db.html.twig',
   'DoctrineBundle:Collector:explain.html.twig' => 'C:\\wamp\\www\\simon_arques_jobeet\\vendor\\doctrine\\doctrine-bundle/Resources/views/Collector/explain.html.twig',
   'EnsSimonBundle:Default:index.html.twig' => 'C:\\wamp\\www\\simon_arques_jobeet\\src\\Ens\\SimonBundle/Resources/views/Default/index.html.twig',
+  'EnsSimonBundle::layout.html.twig' => 'C:\\wamp\\www\\simon_arques_jobeet\\src\\Ens\\SimonBundle/Resources/views/layout.html.twig',
   'DebugBundle:Profiler:dump.html.twig' => 'C:\\wamp\\www\\simon_arques_jobeet\\vendor\\symfony\\symfony\\src\\Symfony\\Bundle\\DebugBundle/Resources/views/Profiler/dump.html.twig',
   'WebProfilerBundle:Collector:ajax.html.twig' => 'C:\\wamp\\www\\simon_arques_jobeet\\vendor\\symfony\\symfony\\src\\Symfony\\Bundle\\WebProfilerBundle/Resources/views/Collector/ajax.html.twig',
   'WebProfilerBundle:Collector:config.html.twig' => 'C:\\wamp\\www\\simon_arques_jobeet\\vendor\\symfony\\symfony\\src\\Symfony\\Bundle\\WebProfilerBundle/Resources/views/Collector/config.html.twig',

@@ -8,33 +8,33 @@ class __TwigTemplate_816da25d926eb1be96dcc543875ff342367492f4b920051774aff106b0f
         parent::__construct($env);
 
         // line 1
-        $this->parent = $this->loadTemplate("base.html.twig", ":job:new.html.twig", 1);
+        $this->parent = $this->loadTemplate("EnsSimonBundle::layout.html.twig", ":job:new.html.twig", 1);
         $this->blocks = array(
-            'body' => array($this, 'block_body'),
+            'content' => array($this, 'block_content'),
         );
     }
 
     protected function doGetParent(array $context)
     {
-        return "base.html.twig";
+        return "EnsSimonBundle::layout.html.twig";
     }
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_a27844f92a89bcb541edd048e33a46d61ba3e0f7c89d3d3e6d96073ee16cafba = $this->env->getExtension("native_profiler");
-        $__internal_a27844f92a89bcb541edd048e33a46d61ba3e0f7c89d3d3e6d96073ee16cafba->enter($__internal_a27844f92a89bcb541edd048e33a46d61ba3e0f7c89d3d3e6d96073ee16cafba_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":job:new.html.twig"));
+        $__internal_b5ba8755ac3b472fd7da4a784f131ed027be9434d3e696520429064df8479b3c = $this->env->getExtension("native_profiler");
+        $__internal_b5ba8755ac3b472fd7da4a784f131ed027be9434d3e696520429064df8479b3c->enter($__internal_b5ba8755ac3b472fd7da4a784f131ed027be9434d3e696520429064df8479b3c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":job:new.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_a27844f92a89bcb541edd048e33a46d61ba3e0f7c89d3d3e6d96073ee16cafba->leave($__internal_a27844f92a89bcb541edd048e33a46d61ba3e0f7c89d3d3e6d96073ee16cafba_prof);
+        $__internal_b5ba8755ac3b472fd7da4a784f131ed027be9434d3e696520429064df8479b3c->leave($__internal_b5ba8755ac3b472fd7da4a784f131ed027be9434d3e696520429064df8479b3c_prof);
 
     }
 
     // line 3
-    public function block_body($context, array $blocks = array())
+    public function block_content($context, array $blocks = array())
     {
-        $__internal_c997e0f59f696fe7c82cd9322ca0284efd0292aa3682c88276c65e3bb686bf0c = $this->env->getExtension("native_profiler");
-        $__internal_c997e0f59f696fe7c82cd9322ca0284efd0292aa3682c88276c65e3bb686bf0c->enter($__internal_c997e0f59f696fe7c82cd9322ca0284efd0292aa3682c88276c65e3bb686bf0c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_c9b834bf569b7493627c5e038f59c2db27c5d9679359f1b1cee3a1ba27be9aba = $this->env->getExtension("native_profiler");
+        $__internal_c9b834bf569b7493627c5e038f59c2db27c5d9679359f1b1cee3a1ba27be9aba->enter($__internal_c9b834bf569b7493627c5e038f59c2db27c5d9679359f1b1cee3a1ba27be9aba_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
 
         // line 4
         echo "    <h1>Job creation</h1>
@@ -63,7 +63,7 @@ class __TwigTemplate_816da25d926eb1be96dcc543875ff342367492f4b920051774aff106b0f
     </ul>
 ";
         
-        $__internal_c997e0f59f696fe7c82cd9322ca0284efd0292aa3682c88276c65e3bb686bf0c->leave($__internal_c997e0f59f696fe7c82cd9322ca0284efd0292aa3682c88276c65e3bb686bf0c_prof);
+        $__internal_c9b834bf569b7493627c5e038f59c2db27c5d9679359f1b1cee3a1ba27be9aba->leave($__internal_c9b834bf569b7493627c5e038f59c2db27c5d9679359f1b1cee3a1ba27be9aba_prof);
 
     }
 
@@ -82,9 +82,9 @@ class __TwigTemplate_816da25d926eb1be96dcc543875ff342367492f4b920051774aff106b0f
         return array (  60 => 13,  53 => 9,  48 => 7,  44 => 6,  40 => 4,  34 => 3,  11 => 1,);
     }
 }
-/* {% extends 'base.html.twig' %}*/
+/* {% extends 'EnsSimonBundle::layout.html.twig' %}*/
 /* */
-/* {% block body %}*/
+/* {% block content %}*/
 /*     <h1>Job creation</h1>*/
 /* */
 /*     {{ form_start(form) }}*/

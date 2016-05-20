@@ -79,6 +79,7 @@
   'DoctrineBundle:Collector:db.html.twig' => 'C:\\wamp\\www\\simon_arques_jobeet\\vendor\\doctrine\\doctrine-bundle/Resources/views/Collector/db.html.twig',
   'DoctrineBundle:Collector:explain.html.twig' => 'C:\\wamp\\www\\simon_arques_jobeet\\vendor\\doctrine\\doctrine-bundle/Resources/views/Collector/explain.html.twig',
   'EnsSimonBundle:Default:index.html.twig' => 'C:\\wamp\\www\\simon_arques_jobeet\\src\\Ens\\SimonBundle/Resources/views/Default/index.html.twig',
+  'EnsSimonBundle::layout.html.twig' => 'C:\\wamp\\www\\simon_arques_jobeet\\src\\Ens\\SimonBundle/Resources/views/layout.html.twig',
   '::base.html.twig' => 'C:\\wamp\\www\\simon_arques_jobeet\\app/Resources\\views/base.html.twig',
   ':default:index.html.twig' => 'C:\\wamp\\www\\simon_arques_jobeet\\app/Resources\\views/default/index.html.twig',
   ':job:edit.html.twig' => 'C:\\wamp\\www\\simon_arques_jobeet\\app/Resources\\views/job/edit.html.twig',

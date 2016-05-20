@@ -8,73 +8,73 @@ class __TwigTemplate_99ca2ef5e815a87b0758bf8373177c164922c80050d91d068e0c4f5541a
         parent::__construct($env);
 
         // line 1
-        $this->parent = $this->loadTemplate("base.html.twig", ":job:edit.html.twig", 1);
+        $this->parent = $this->loadTemplate("EnsSimonBundle::layout.html.twig", ":job:edit.html.twig", 1);
         $this->blocks = array(
-            'body' => array($this, 'block_body'),
+            'content' => array($this, 'block_content'),
         );
     }
 
     protected function doGetParent(array $context)
     {
-        return "base.html.twig";
+        return "EnsSimonBundle::layout.html.twig";
     }
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_1aaead84ce2314ab162127209fcfcc5f0bc8a5870413d7bfda841985975421e1 = $this->env->getExtension("native_profiler");
-        $__internal_1aaead84ce2314ab162127209fcfcc5f0bc8a5870413d7bfda841985975421e1->enter($__internal_1aaead84ce2314ab162127209fcfcc5f0bc8a5870413d7bfda841985975421e1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":job:edit.html.twig"));
+        $__internal_f021b2198d62f51405b56a2ddeb45f3088f7fd1e5e4b9d1523edda06835d05df = $this->env->getExtension("native_profiler");
+        $__internal_f021b2198d62f51405b56a2ddeb45f3088f7fd1e5e4b9d1523edda06835d05df->enter($__internal_f021b2198d62f51405b56a2ddeb45f3088f7fd1e5e4b9d1523edda06835d05df_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":job:edit.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_1aaead84ce2314ab162127209fcfcc5f0bc8a5870413d7bfda841985975421e1->leave($__internal_1aaead84ce2314ab162127209fcfcc5f0bc8a5870413d7bfda841985975421e1_prof);
+        $__internal_f021b2198d62f51405b56a2ddeb45f3088f7fd1e5e4b9d1523edda06835d05df->leave($__internal_f021b2198d62f51405b56a2ddeb45f3088f7fd1e5e4b9d1523edda06835d05df_prof);
 
     }
 
-    // line 3
-    public function block_body($context, array $blocks = array())
+    // line 5
+    public function block_content($context, array $blocks = array())
     {
-        $__internal_7f1f5026d21a55fdbedb16918dbe6b63a1eb387ab0ea21b60c8cfd2cefad09c5 = $this->env->getExtension("native_profiler");
-        $__internal_7f1f5026d21a55fdbedb16918dbe6b63a1eb387ab0ea21b60c8cfd2cefad09c5->enter($__internal_7f1f5026d21a55fdbedb16918dbe6b63a1eb387ab0ea21b60c8cfd2cefad09c5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_3be6496afc12246fe5edf40e403f10c688d08f446a0646710273ad105bfed6dc = $this->env->getExtension("native_profiler");
+        $__internal_3be6496afc12246fe5edf40e403f10c688d08f446a0646710273ad105bfed6dc->enter($__internal_3be6496afc12246fe5edf40e403f10c688d08f446a0646710273ad105bfed6dc_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
 
-        // line 4
+        // line 6
         echo "    <h1>Job edit</h1>
 
     ";
-        // line 6
+        // line 8
         echo         $this->env->getExtension('form')->renderer->renderBlock((isset($context["edit_form"]) ? $context["edit_form"] : $this->getContext($context, "edit_form")), 'form_start');
         echo "
         ";
-        // line 7
+        // line 9
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock((isset($context["edit_form"]) ? $context["edit_form"] : $this->getContext($context, "edit_form")), 'widget');
         echo "
         <input type=\"submit\" value=\"Edit\" />
     ";
-        // line 9
+        // line 11
         echo         $this->env->getExtension('form')->renderer->renderBlock((isset($context["edit_form"]) ? $context["edit_form"] : $this->getContext($context, "edit_form")), 'form_end');
         echo "
 
     <ul>
         <li>
             <a href=\"";
-        // line 13
+        // line 15
         echo $this->env->getExtension('routing')->getPath("job_index");
         echo "\">Back to the list</a>
         </li>
         <li>
             ";
-        // line 16
+        // line 18
         echo         $this->env->getExtension('form')->renderer->renderBlock((isset($context["delete_form"]) ? $context["delete_form"] : $this->getContext($context, "delete_form")), 'form_start');
         echo "
                 <input type=\"submit\" value=\"Delete\">
             ";
-        // line 18
+        // line 20
         echo         $this->env->getExtension('form')->renderer->renderBlock((isset($context["delete_form"]) ? $context["delete_form"] : $this->getContext($context, "delete_form")), 'form_end');
         echo "
         </li>
     </ul>
 ";
         
-        $__internal_7f1f5026d21a55fdbedb16918dbe6b63a1eb387ab0ea21b60c8cfd2cefad09c5->leave($__internal_7f1f5026d21a55fdbedb16918dbe6b63a1eb387ab0ea21b60c8cfd2cefad09c5_prof);
+        $__internal_3be6496afc12246fe5edf40e403f10c688d08f446a0646710273ad105bfed6dc->leave($__internal_3be6496afc12246fe5edf40e403f10c688d08f446a0646710273ad105bfed6dc_prof);
 
     }
 
@@ -90,12 +90,14 @@ class __TwigTemplate_99ca2ef5e815a87b0758bf8373177c164922c80050d91d068e0c4f5541a
 
     public function getDebugInfo()
     {
-        return array (  71 => 18,  66 => 16,  60 => 13,  53 => 9,  48 => 7,  44 => 6,  40 => 4,  34 => 3,  11 => 1,);
+        return array (  71 => 20,  66 => 18,  60 => 15,  53 => 11,  48 => 9,  44 => 8,  40 => 6,  34 => 5,  11 => 1,);
     }
 }
-/* {% extends 'base.html.twig' %}*/
+/* {% extends 'EnsSimonBundle::layout.html.twig' %}*/
 /* */
-/* {% block body %}*/
+/* */
+/* */
+/* {% block content %}*/
 /*     <h1>Job edit</h1>*/
 /* */
 /*     {{ form_start(edit_form) }}*/
