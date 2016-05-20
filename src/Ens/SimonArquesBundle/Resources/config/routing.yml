@@ -1,0 +1,3 @@
+ens_simon_arques_homepage:
+    path:     /
+    defaults: { _controller: EnsSimonArquesBundle:Default:index }
