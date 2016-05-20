@@ -6,7 +6,7 @@ use Doctrine\Common\Persistence\ObjectManager;
 use Doctrine\Common\DataFixtures\AbstractFixture;
 use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
 use Ens\SimonBundle\Entity\Job;
-namespace Ens\SimonBundle\DataFixtures\ORM;
+
 
 
 class LoadJobData extends AbstractFixture implements OrderedFixtureInterface
