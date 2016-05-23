@@ -32,6 +32,18 @@ class Category
 
     private $active_jobs;
 
+    private $more_jobs;
+
+    public function setMoreJobs($jobs)
+    {
+        $this->more_jobs = $jobs >=  0 ? $jobs : 0;
+    }
+
+    public function getMoreJobs()
+    {
+        return $this->more_jobs;
+    }
+
     /**
      * Constructor
      */

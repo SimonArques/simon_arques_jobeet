@@ -5,7 +5,3 @@ ens_simon:
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation
-
-EnsSimonBundle_category:
-    path:  /category/{slug}
-    defaults: { _controller: EnsSimonBundle:Category:show }
