@@ -130,12 +130,12 @@ class __TwigTemplate_cdc576a1211fef64b13ed4ec54b31fb67d1e89f5ffd4d65b62ba80a7395
           <span class=\"symfony\">
             <img src=\"";
         // line 68
-        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/ensjobeet/images/jobeet-mini.png"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/enssimon/images/jobeet-mini.png"), "html", null, true);
         echo "\" />
             powered by <a href=\"http://www.symfony.com/\">
               <img src=\"";
         // line 70
-        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/ensjobeet/images/symfony.gif"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/enssimon/images/symfony.gif"), "html", null, true);
         echo "\" alt=\"symfony framework\" />
             </a>
           </span>
@@ -266,9 +266,9 @@ class __TwigTemplate_cdc576a1211fef64b13ed4ec54b31fb67d1e89f5ffd4d65b62ba80a7395
 /*     <div id="footer">*/
 /*         <div class="content">*/
 /*           <span class="symfony">*/
-/*             <img src="{{ asset('bundles/ensjobeet/images/jobeet-mini.png') }}" />*/
+/*             <img src="{{ asset('bundles/enssimon/images/jobeet-mini.png') }}" />*/
 /*             powered by <a href="http://www.symfony.com/">*/
-/*               <img src="{{ asset('bundles/ensjobeet/images/symfony.gif') }}" alt="symfony framework" />*/
+/*               <img src="{{ asset('bundles/enssimon/images/symfony.gif') }}" alt="symfony framework" />*/
 /*             </a>*/
 /*           </span>*/
 /*             <ul>*/
