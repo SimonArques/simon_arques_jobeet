@@ -309,4 +309,15 @@ class Category extends \Ens\SimonBundle\Entity\Category implements \Doctrine\ORM
         return parent::getActiveJobs();
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    public function getSlug()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getSlug', array());
+
+        return parent::getSlug();
+    }
+
 }

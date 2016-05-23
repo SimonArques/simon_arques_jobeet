@@ -3,6 +3,7 @@
 namespace Ens\SimonBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Ens\SimonBundle\Utils\Jobeet;
 
 /**
  * Category
@@ -152,5 +153,10 @@ class Category
     public function getActiveJobs()
     {
         return $this->active_jobs;
+    }
+
+    public function getSlug()
+    {
+        return Jobeet::slugify($this->getName());
     }
 }

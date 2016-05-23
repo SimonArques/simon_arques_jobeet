@@ -67,6 +67,9 @@ class JobController extends Controller
     {
         $deleteForm = $this->createDeleteForm($job);
 
+        $em = $this->getDoctrine()->getManager();
+        $job = $em->getRepository('EnsSimonBundle:Job')->getActiveJob($job);
+
         return $this->render('job/show.html.twig', array(
             'job' => $job,
             'delete_form' => $deleteForm->createView(),
