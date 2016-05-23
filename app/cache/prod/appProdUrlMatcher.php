@@ -44,13 +44,13 @@ class appProdUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirecta
             not_job_index:
 
             // job_show
-            if (preg_match('#^/job/(?P<company>[^/]++)/(?P<location>[^/]++)/(?P<id>[^/]++)/(?P<position>[^/]++)$#s', $pathinfo, $matches)) {
+            if (preg_match('#^/job/(?P<company>[^/]++)/(?P<location>[^/]++)/(?P<id>\\d+)/(?P<position>[^/]++)$#s', $pathinfo, $matches)) {
                 if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
                     $allow = array_merge($allow, array('GET', 'HEAD'));
                     goto not_job_show;
                 }
 
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'job_show')), array (  '_controller' => 'EnsSimontBundle:Job:show',));
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'job_show')), array (  '_controller' => 'Ens\\SimonBundle\\Controller\\JobController::showAction',));
             }
             not_job_show:
 
@@ -95,7 +95,7 @@ class appProdUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirecta
                 return $this->redirect($pathinfo.'/', 'ens_simon_homepage');
             }
 
-            return array (  '_controller' => 'Ens\\SimonBundle\\Controller\\jobController::indexAction',  '_route' => 'ens_simon_homepage',);
+            return array (  '_controller' => 'Ens\\SimonBundle\\Controller\\JobController::indexAction',  '_route' => 'ens_simon_homepage',);
         }
 
         // homepage
