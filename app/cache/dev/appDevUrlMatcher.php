@@ -168,8 +168,8 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
         }
 
         // EnsSimonBundle_category
-        if (0 === strpos($pathinfo, '/category') && preg_match('#^/category/(?P<slug>[^/]++)$#s', $pathinfo, $matches)) {
-            return $this->mergeDefaults(array_replace($matches, array('_route' => 'EnsSimonBundle_category')), array (  '_controller' => 'Ens\\SimonBundle\\Controller\\CategoryController::showAction',));
+        if (0 === strpos($pathinfo, '/category') && preg_match('#^/category/(?P<slug>[^/]++)(?:/(?P<page>[^/]++))?$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'EnsSimonBundle_category')), array (  '_controller' => 'Ens\\SimonBundle\\Controller\\CategoryController::showAction',  'page' => 1,));
         }
 
         // ens_simon_homepage
