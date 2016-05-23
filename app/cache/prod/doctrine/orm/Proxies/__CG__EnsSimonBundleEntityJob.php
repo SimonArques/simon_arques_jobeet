@@ -595,4 +595,15 @@ class Job extends \Ens\SimonBundle\Entity\Job implements \Doctrine\ORM\Proxy\Pro
         return parent::setUpdatedAtValue();
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    public function setExpiresAtValue()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setExpiresAtValue', array());
+
+        return parent::setExpiresAtValue();
+    }
+
 }

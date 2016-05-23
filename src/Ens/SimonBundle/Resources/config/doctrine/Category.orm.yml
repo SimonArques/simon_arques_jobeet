@@ -1,6 +1,7 @@
 # src/Ens/SimonBundle/Resources/config/doctrine/Category.orm.yml
 Ens\SimonBundle\Entity\Category:
   type: entity
+  repositoryClass: Ens\SimonBundle\Repository\CategoryRepository
   table: category
   id:
     id:

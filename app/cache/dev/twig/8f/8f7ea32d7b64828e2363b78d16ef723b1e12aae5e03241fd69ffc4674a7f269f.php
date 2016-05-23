@@ -15,13 +15,13 @@ class __TwigTemplate_48ed79cf9c037f60bfe9b5aeb15685120869201b555d050485f0557ddf6
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_108019670deebf5462182cc280246218fce91224d32af357cf0d6b85251b6300 = $this->env->getExtension("native_profiler");
-        $__internal_108019670deebf5462182cc280246218fce91224d32af357cf0d6b85251b6300->enter($__internal_108019670deebf5462182cc280246218fce91224d32af357cf0d6b85251b6300_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "TwigBundle:Exception:error.rdf.twig"));
+        $__internal_294bfd2f1d46d2540a0b54e56adf7ded85c9311b37f6ae99c46e7c561a0b6fc2 = $this->env->getExtension("native_profiler");
+        $__internal_294bfd2f1d46d2540a0b54e56adf7ded85c9311b37f6ae99c46e7c561a0b6fc2->enter($__internal_294bfd2f1d46d2540a0b54e56adf7ded85c9311b37f6ae99c46e7c561a0b6fc2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "TwigBundle:Exception:error.rdf.twig"));
 
         // line 1
         $this->loadTemplate("@Twig/Exception/error.xml.twig", "TwigBundle:Exception:error.rdf.twig", 1)->display($context);
         
-        $__internal_108019670deebf5462182cc280246218fce91224d32af357cf0d6b85251b6300->leave($__internal_108019670deebf5462182cc280246218fce91224d32af357cf0d6b85251b6300_prof);
+        $__internal_294bfd2f1d46d2540a0b54e56adf7ded85c9311b37f6ae99c46e7c561a0b6fc2->leave($__internal_294bfd2f1d46d2540a0b54e56adf7ded85c9311b37f6ae99c46e7c561a0b6fc2_prof);
 
     }
 

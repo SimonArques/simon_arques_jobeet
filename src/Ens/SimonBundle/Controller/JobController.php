@@ -22,13 +22,15 @@ class JobController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
 
-        $query = $em->createQuery(
-            'SELECT j FROM EnsSimonBundle:Job j WHERE j.created_at > :date'
-        )->setParameter('date', date('Y-m-d H:i:s', time() - 86400 * 30));
-        $jobs = $query->getResult();
+        $categories = $em->getRepository('EnsSimonBundle:Category')->getWithJobs();
+
+        foreach($categories as $category)
+        {
+            $category->setActiveJobs($em->getRepository('EnsSimonBundle:Job')->getActiveJobs($category->getId()));
+        }
 
         return $this->render('job/index.html.twig', array(
-            'jobs' => $jobs
+            'categories' => $categories
         ));
     }
 

@@ -1,6 +1,7 @@
 # src/Ens/SimonBundle/Resources/config/doctrine/Job.orm.yml
 Ens\SimonBundle\Entity\Job:
   type: entity
+  repositoryClass: Ens\SimonBundle\Repository\JobRepository
   table: job
   id:
     id:
@@ -60,5 +61,5 @@ Ens\SimonBundle\Entity\Job:
         name: category_id
         referencedColumnName: id
   lifecycleCallbacks:
-    prePersist: [ setCreatedAtValue ]
+    prePersist: [ setCreatedAtValue, setExpiresAtValue ]
     preUpdate: [ setUpdatedAtValue ]

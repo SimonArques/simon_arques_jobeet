@@ -29,6 +29,8 @@ class Category
      */
     private $category_affiliates;
 
+    private $active_jobs;
+
     /**
      * Constructor
      */
@@ -43,6 +45,16 @@ class Category
      *
      * @return integer 
      */
+
+    public function setActiveJobs($jobs)
+    {
+        $this->active_jobs = $jobs;
+    }
+
+    public function getActiveJobs()
+    {
+        return $this->active_jobs;
+    }
     public function getId()
     {
         return $this->id;
