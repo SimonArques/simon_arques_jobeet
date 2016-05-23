@@ -1,0 +1,21 @@
+{% extends 'EnsSimonBundle::layout.html.twig' %}
+
+{% block title %}
+    Jobs in the {{ category.name }} category
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('bundles/enssimon/css/jobs.css') }}" type="text/css" media="all" />
+{% endblock %}
+
+{% block content %}
+    <div class="category">
+        <div class="feed">
+            <a href="">Feed</a>
+        </div>
+        <h1>{{ category.name }}</h1>
+    </div>
+
+    {% include 'EnsSimonBundle:Job:list.html.twig' with {'jobs': category.activejobs} %}
+{% endblock %}

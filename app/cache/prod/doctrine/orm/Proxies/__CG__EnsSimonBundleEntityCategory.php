@@ -64,10 +64,10 @@ class Category extends \Ens\SimonBundle\Entity\Category implements \Doctrine\ORM
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return array('__isInitialized__', '' . "\0" . 'Ens\\SimonBundle\\Entity\\Category' . "\0" . 'id', '' . "\0" . 'Ens\\SimonBundle\\Entity\\Category' . "\0" . 'name', '' . "\0" . 'Ens\\SimonBundle\\Entity\\Category' . "\0" . 'jobs', '' . "\0" . 'Ens\\SimonBundle\\Entity\\Category' . "\0" . 'category_affiliates', '' . "\0" . 'Ens\\SimonBundle\\Entity\\Category' . "\0" . 'active_jobs');
+            return array('__isInitialized__', '' . "\0" . 'Ens\\SimonBundle\\Entity\\Category' . "\0" . 'id', '' . "\0" . 'Ens\\SimonBundle\\Entity\\Category' . "\0" . 'name', '' . "\0" . 'Ens\\SimonBundle\\Entity\\Category' . "\0" . 'jobs', '' . "\0" . 'Ens\\SimonBundle\\Entity\\Category' . "\0" . 'category_affiliates', '' . "\0" . 'Ens\\SimonBundle\\Entity\\Category' . "\0" . 'active_jobs', '' . "\0" . 'Ens\\SimonBundle\\Entity\\Category' . "\0" . 'more_jobs', '' . "\0" . 'Ens\\SimonBundle\\Entity\\Category' . "\0" . 'slug');
         }
 
-        return array('__isInitialized__', '' . "\0" . 'Ens\\SimonBundle\\Entity\\Category' . "\0" . 'id', '' . "\0" . 'Ens\\SimonBundle\\Entity\\Category' . "\0" . 'name', '' . "\0" . 'Ens\\SimonBundle\\Entity\\Category' . "\0" . 'jobs', '' . "\0" . 'Ens\\SimonBundle\\Entity\\Category' . "\0" . 'category_affiliates', '' . "\0" . 'Ens\\SimonBundle\\Entity\\Category' . "\0" . 'active_jobs');
+        return array('__isInitialized__', '' . "\0" . 'Ens\\SimonBundle\\Entity\\Category' . "\0" . 'id', '' . "\0" . 'Ens\\SimonBundle\\Entity\\Category' . "\0" . 'name', '' . "\0" . 'Ens\\SimonBundle\\Entity\\Category' . "\0" . 'jobs', '' . "\0" . 'Ens\\SimonBundle\\Entity\\Category' . "\0" . 'category_affiliates', '' . "\0" . 'Ens\\SimonBundle\\Entity\\Category' . "\0" . 'active_jobs', '' . "\0" . 'Ens\\SimonBundle\\Entity\\Category' . "\0" . 'more_jobs', '' . "\0" . 'Ens\\SimonBundle\\Entity\\Category' . "\0" . 'slug');
     }
 
     /**
@@ -173,6 +173,28 @@ class Category extends \Ens\SimonBundle\Entity\Category implements \Doctrine\ORM
     }
 
     
+    /**
+     * {@inheritDoc}
+     */
+    public function setMoreJobs($jobs)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setMoreJobs', array($jobs));
+
+        return parent::setMoreJobs($jobs);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getMoreJobs()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getMoreJobs', array());
+
+        return parent::getMoreJobs();
+    }
+
     /**
      * {@inheritDoc}
      */
@@ -307,6 +329,39 @@ class Category extends \Ens\SimonBundle\Entity\Category implements \Doctrine\ORM
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'getActiveJobs', array());
 
         return parent::getActiveJobs();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setSlug($slug)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setSlug', array($slug));
+
+        return parent::setSlug($slug);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getSlug()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getSlug', array());
+
+        return parent::getSlug();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setSlugValue()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setSlugValue', array());
+
+        return parent::setSlugValue();
     }
 
 }

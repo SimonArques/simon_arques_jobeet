@@ -81,9 +81,11 @@
   'EnsSimonBundle:Default:index.html.twig' => 'C:\\wamp\\www\\simon_arques_jobeet\\src\\Ens\\SimonBundle/Resources/views/Default/index.html.twig',
   'EnsSimonBundle::layout.html.twig' => 'C:\\wamp\\www\\simon_arques_jobeet\\src\\Ens\\SimonBundle/Resources/views/layout.html.twig',
   '::base.html.twig' => 'C:\\wamp\\www\\simon_arques_jobeet\\app/Resources\\views/base.html.twig',
+  ':Category:show.html.twig' => 'C:\\wamp\\www\\simon_arques_jobeet\\app/Resources\\views/Category/show.html.twig',
   ':default:index.html.twig' => 'C:\\wamp\\www\\simon_arques_jobeet\\app/Resources\\views/default/index.html.twig',
   ':job:edit.html.twig' => 'C:\\wamp\\www\\simon_arques_jobeet\\app/Resources\\views/job/edit.html.twig',
   ':job:index.html.twig' => 'C:\\wamp\\www\\simon_arques_jobeet\\app/Resources\\views/job/index.html.twig',
+  ':job:list.html.twig' => 'C:\\wamp\\www\\simon_arques_jobeet\\app/Resources\\views/job/list.html.twig',
   ':job:new.html.twig' => 'C:\\wamp\\www\\simon_arques_jobeet\\app/Resources\\views/job/new.html.twig',
   ':job:show.html.twig' => 'C:\\wamp\\www\\simon_arques_jobeet\\app/Resources\\views/job/show.html.twig',
 );

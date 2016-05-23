@@ -22,20 +22,20 @@ class __TwigTemplate_ef50cc1a7e8237095b54994efc1fd691b4501fb5be2e848c0f7f2e400aa
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_b42f186d0bcc9bdef39a25879f940cbcd4b00fb1d574ec7c81d5e25d070454e4 = $this->env->getExtension("native_profiler");
-        $__internal_b42f186d0bcc9bdef39a25879f940cbcd4b00fb1d574ec7c81d5e25d070454e4->enter($__internal_b42f186d0bcc9bdef39a25879f940cbcd4b00fb1d574ec7c81d5e25d070454e4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":job:index.html.twig"));
+        $__internal_e1163f523ed4121f0cde16ab329d3cdaadb1e88e6fae7256a9bc6df53cf1bef9 = $this->env->getExtension("native_profiler");
+        $__internal_e1163f523ed4121f0cde16ab329d3cdaadb1e88e6fae7256a9bc6df53cf1bef9->enter($__internal_e1163f523ed4121f0cde16ab329d3cdaadb1e88e6fae7256a9bc6df53cf1bef9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", ":job:index.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_b42f186d0bcc9bdef39a25879f940cbcd4b00fb1d574ec7c81d5e25d070454e4->leave($__internal_b42f186d0bcc9bdef39a25879f940cbcd4b00fb1d574ec7c81d5e25d070454e4_prof);
+        $__internal_e1163f523ed4121f0cde16ab329d3cdaadb1e88e6fae7256a9bc6df53cf1bef9->leave($__internal_e1163f523ed4121f0cde16ab329d3cdaadb1e88e6fae7256a9bc6df53cf1bef9_prof);
 
     }
 
     // line 3
     public function block_stylesheets($context, array $blocks = array())
     {
-        $__internal_c7f35c962c0d31f450421d244eff3bb07aaf3d417acf0980a5a329210b6a685a = $this->env->getExtension("native_profiler");
-        $__internal_c7f35c962c0d31f450421d244eff3bb07aaf3d417acf0980a5a329210b6a685a->enter($__internal_c7f35c962c0d31f450421d244eff3bb07aaf3d417acf0980a5a329210b6a685a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
+        $__internal_858d7f42932efeb78114acda57af2f7449e668156d7abbfa612272126e3b9008 = $this->env->getExtension("native_profiler");
+        $__internal_858d7f42932efeb78114acda57af2f7449e668156d7abbfa612272126e3b9008->enter($__internal_858d7f42932efeb78114acda57af2f7449e668156d7abbfa612272126e3b9008_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
         // line 4
         echo "    ";
@@ -47,15 +47,15 @@ class __TwigTemplate_ef50cc1a7e8237095b54994efc1fd691b4501fb5be2e848c0f7f2e400aa
         echo "\" type=\"text/css\" media=\"all\" />
 ";
         
-        $__internal_c7f35c962c0d31f450421d244eff3bb07aaf3d417acf0980a5a329210b6a685a->leave($__internal_c7f35c962c0d31f450421d244eff3bb07aaf3d417acf0980a5a329210b6a685a_prof);
+        $__internal_858d7f42932efeb78114acda57af2f7449e668156d7abbfa612272126e3b9008->leave($__internal_858d7f42932efeb78114acda57af2f7449e668156d7abbfa612272126e3b9008_prof);
 
     }
 
     // line 8
     public function block_content($context, array $blocks = array())
     {
-        $__internal_7f003fcab23a5dc8708c6b3ccda0ae75a40d0526c1c6c7eed1297d5da01cae1b = $this->env->getExtension("native_profiler");
-        $__internal_7f003fcab23a5dc8708c6b3ccda0ae75a40d0526c1c6c7eed1297d5da01cae1b->enter($__internal_7f003fcab23a5dc8708c6b3ccda0ae75a40d0526c1c6c7eed1297d5da01cae1b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
+        $__internal_3c4fbed95aff63f2a7cb7e208b2463bb423886356a70cca36936a9559de97b17 = $this->env->getExtension("native_profiler");
+        $__internal_3c4fbed95aff63f2a7cb7e208b2463bb423886356a70cca36936a9559de97b17->enter($__internal_3c4fbed95aff63f2a7cb7e208b2463bb423886356a70cca36936a9559de97b17_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
 
         // line 9
         echo "    <div id=\"jobs\">
@@ -63,6 +63,19 @@ class __TwigTemplate_ef50cc1a7e8237095b54994efc1fd691b4501fb5be2e848c0f7f2e400aa
         // line 10
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["categories"]) ? $context["categories"] : $this->getContext($context, "categories")));
+        $context['loop'] = array(
+          'parent' => $context['_parent'],
+          'index0' => 0,
+          'index'  => 1,
+          'first'  => true,
+        );
+        if (is_array($context['_seq']) || (is_object($context['_seq']) && $context['_seq'] instanceof Countable)) {
+            $length = count($context['_seq']);
+            $context['loop']['revindex0'] = $length - 1;
+            $context['loop']['revindex'] = $length;
+            $context['loop']['length'] = $length;
+            $context['loop']['last'] = 1 === $length;
+        }
         foreach ($context['_seq'] as $context["_key"] => $context["category"]) {
             // line 11
             echo "            <div>
@@ -70,80 +83,54 @@ class __TwigTemplate_ef50cc1a7e8237095b54994efc1fd691b4501fb5be2e848c0f7f2e400aa
                     <div class=\"feed\">
                         <a href=\"\">Feed</a>
                     </div>
-                    <h1>";
+                    <h1><a href=\"";
             // line 16
+            echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("EnsSimonBundle_category", array("slug" => $this->getAttribute($context["category"], "slug", array()))), "html", null, true);
+            echo "\">";
             echo twig_escape_filter($this->env, $this->getAttribute($context["category"], "name", array()), "html", null, true);
-            echo "</h1>
+            echo "</a></h1>
                 </div>
-                <table class=\"jobs\">
-                    ";
+
+                ";
             // line 19
-            $context['_parent'] = $context;
-            $context['_seq'] = twig_ensure_traversable($this->getAttribute($context["category"], "activejobs", array()));
-            $context['loop'] = array(
-              'parent' => $context['_parent'],
-              'index0' => 0,
-              'index'  => 1,
-              'first'  => true,
-            );
-            if (is_array($context['_seq']) || (is_object($context['_seq']) && $context['_seq'] instanceof Countable)) {
-                $length = count($context['_seq']);
-                $context['loop']['revindex0'] = $length - 1;
-                $context['loop']['revindex'] = $length;
-                $context['loop']['length'] = $length;
-                $context['loop']['last'] = 1 === $length;
-            }
-            foreach ($context['_seq'] as $context["_key"] => $context["entity"]) {
-                // line 20
-                echo "                        <tr class=\"";
-                echo twig_escape_filter($this->env, twig_cycle(array(0 => "even", 1 => "odd"), $this->getAttribute($context["loop"], "index", array())), "html", null, true);
-                echo "\">
-                            <td class=\"location\">";
-                // line 21
-                echo twig_escape_filter($this->env, $this->getAttribute($context["entity"], "location", array()), "html", null, true);
-                echo "</td>
-                            <td class=\"position\">
-                                <a href=\"";
+            $this->loadTemplate("EnsSimonBundle:Job:list.html.twig", ":job:index.html.twig", 19)->display(array_merge($context, array("jobs" => $this->getAttribute($context["category"], "activejobs", array()))));
+            // line 20
+            echo "
+                ";
+            // line 21
+            if ($this->getAttribute($context["category"], "morejobs", array())) {
+                // line 22
+                echo "                    <div class=\"more_jobs\">
+                        and <a href=\"";
                 // line 23
-                echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("job_show", array("id" => $this->getAttribute($context["entity"], "id", array()), "company" => $this->getAttribute($context["entity"], "companyslug", array()), "location" => $this->getAttribute($context["entity"], "locationslug", array()), "position" => $this->getAttribute($context["entity"], "positionslug", array()))), "html", null, true);
-                echo "\">
-                                    ";
-                // line 24
-                echo twig_escape_filter($this->env, $this->getAttribute($context["entity"], "position", array()), "html", null, true);
-                echo "
-                                </a>
-                            </td>
-                            <td class=\"company\">";
-                // line 27
-                echo twig_escape_filter($this->env, $this->getAttribute($context["entity"], "company", array()), "html", null, true);
-                echo "</td>
-                        </tr>
-                    ";
-                ++$context['loop']['index0'];
-                ++$context['loop']['index'];
-                $context['loop']['first'] = false;
-                if (isset($context['loop']['length'])) {
-                    --$context['loop']['revindex0'];
-                    --$context['loop']['revindex'];
-                    $context['loop']['last'] = 0 === $context['loop']['revindex0'];
-                }
+                echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("EnsSimonBundle_category", array("slug" => $this->getAttribute($context["category"], "slug", array()))), "html", null, true);
+                echo "\">";
+                echo twig_escape_filter($this->env, $this->getAttribute($context["category"], "morejobs", array()), "html", null, true);
+                echo "</a>
+                        more...
+                    </div>
+                ";
             }
-            $_parent = $context['_parent'];
-            unset($context['_seq'], $context['_iterated'], $context['_key'], $context['entity'], $context['_parent'], $context['loop']);
-            $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 30
-            echo "                </table>
-            </div>
+            // line 27
+            echo "            </div>
         ";
+            ++$context['loop']['index0'];
+            ++$context['loop']['index'];
+            $context['loop']['first'] = false;
+            if (isset($context['loop']['length'])) {
+                --$context['loop']['revindex0'];
+                --$context['loop']['revindex'];
+                $context['loop']['last'] = 0 === $context['loop']['revindex0'];
+            }
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['category'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 33
+        // line 29
         echo "    </div>
 ";
         
-        $__internal_7f003fcab23a5dc8708c6b3ccda0ae75a40d0526c1c6c7eed1297d5da01cae1b->leave($__internal_7f003fcab23a5dc8708c6b3ccda0ae75a40d0526c1c6c7eed1297d5da01cae1b_prof);
+        $__internal_3c4fbed95aff63f2a7cb7e208b2463bb423886356a70cca36936a9559de97b17->leave($__internal_3c4fbed95aff63f2a7cb7e208b2463bb423886356a70cca36936a9559de97b17_prof);
 
     }
 
@@ -159,7 +146,7 @@ class __TwigTemplate_ef50cc1a7e8237095b54994efc1fd691b4501fb5be2e848c0f7f2e400aa
 
     public function getDebugInfo()
     {
-        return array (  143 => 33,  135 => 30,  118 => 27,  112 => 24,  108 => 23,  103 => 21,  98 => 20,  81 => 19,  75 => 16,  68 => 11,  64 => 10,  61 => 9,  55 => 8,  46 => 5,  41 => 4,  35 => 3,  11 => 1,);
+        return array (  130 => 29,  115 => 27,  106 => 23,  103 => 22,  101 => 21,  98 => 20,  96 => 19,  88 => 16,  81 => 11,  64 => 10,  61 => 9,  55 => 8,  46 => 5,  41 => 4,  35 => 3,  11 => 1,);
     }
 }
 /* {% extends 'EnsSimonBundle::layout.html.twig' %}*/
@@ -177,21 +164,17 @@ class __TwigTemplate_ef50cc1a7e8237095b54994efc1fd691b4501fb5be2e848c0f7f2e400aa
 /*                     <div class="feed">*/
 /*                         <a href="">Feed</a>*/
 /*                     </div>*/
-/*                     <h1>{{ category.name }}</h1>*/
+/*                     <h1><a href="{{ path('EnsSimonBundle_category', { 'slug': category.slug }) }}">{{ category.name }}</a></h1>*/
 /*                 </div>*/
-/*                 <table class="jobs">*/
-/*                     {% for entity in category.activejobs %}*/
-/*                         <tr class="{{ cycle(['even', 'odd'], loop.index) }}">*/
-/*                             <td class="location">{{ entity.location }}</td>*/
-/*                             <td class="position">*/
-/*                                 <a href="{{ path('job_show', { 'id': entity.id, 'company': entity.companyslug, 'location': entity.locationslug, 'position': entity.positionslug }) }}">*/
-/*                                     {{ entity.position }}*/
-/*                                 </a>*/
-/*                             </td>*/
-/*                             <td class="company">{{ entity.company }}</td>*/
-/*                         </tr>*/
-/*                     {% endfor %}*/
-/*                 </table>*/
+/* */
+/*                 {% include 'EnsSimonBundle:Job:list.html.twig' with {'jobs': category.activejobs} %}*/
+/* */
+/*                 {% if category.morejobs %}*/
+/*                     <div class="more_jobs">*/
+/*                         and <a href="{{ path('EnsSimonBundle_category', { 'slug': category.slug }) }}">{{ category.morejobs }}</a>*/
+/*                         more...*/
+/*                     </div>*/
+/*                 {% endif %}*/
 /*             </div>*/
 /*         {% endfor %}*/
 /*     </div>*/
