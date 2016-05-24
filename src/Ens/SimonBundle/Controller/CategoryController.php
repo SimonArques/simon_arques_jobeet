@@ -36,7 +36,7 @@ class CategoryController extends Controller
 
         $category->setActiveJobs($em->getRepository('EnsSimonBundle:Job')->getActiveJobs($category->getId()));
 
-        return $this->render('Category:show.html.twig', array(
+        return $this->render('category/show.html.twig', array(
             'category' => $category,
             'last_page' => $last_page,
             'previous_page' => $previous_page,
