@@ -19,7 +19,6 @@ class JobeetTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals('paris-france', Jobeet::slugify('paris,france'));
         $this->assertEquals('sensio', Jobeet::slugify('  sensio'));
         $this->assertEquals('sensio', Jobeet::slugify('sensio  '));
-
         $this->assertEquals('n-a', Jobeet::slugify(''));
     }
 }
