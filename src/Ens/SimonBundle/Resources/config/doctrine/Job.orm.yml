@@ -63,6 +63,6 @@ Ens\SimonBundle\Entity\Job:
   lifecycleCallbacks:
     prePersist: [ preUpload, setCreatedAtValue, setExpiresAtValue ]
     preUpdate: [ preUpload, setUpdatedAtValue ]
-    postPersist: [ upload ]
+    prePersist: [ setTokenValue, preUpload, setCreatedAtValue, setExpiresAtValue ]
     postUpdate: [ upload ]
     postRemove: [ removeUpload ]

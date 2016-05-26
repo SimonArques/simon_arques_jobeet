@@ -44,21 +44,12 @@ class JobController extends Controller
      */
     public function newAction(Request $request)
     {
-        $job = new Job();
-        $form = $this->createForm('Ens\SimonBundle\Form\JobType', $job);
-        $form->handleRequest($request);
-
-        if ($form->isSubmitted() && $form->isValid()) {
-            $em = $this->getDoctrine()->getManager();
-            $em->persist($job);
-            $em->flush();
-
-            return $this->redirectToRoute('job_show', array('id' => $job->getId()));
-        }
-
+        $entity = new Job();
+        $entity->setType('full-time');
+        $form   = $this->createForm(new JobType(), $entity);
         return $this->render('job/new.html.twig', array(
-            'job' => $job,
-            'form' => $form->createView(),
+            'job' => $entity,
+            'form'   => $form->createView()
         ));
     }
 
@@ -138,16 +129,18 @@ class JobController extends Controller
         ;
     }
 
-    public function createAction()
+    public function createAction(Request $request)
     {
         $entity  = new Job();
-        $request = $this->getRequest();
         $form    = $this->createForm(new JobType(), $entity);
-        $form->bindRequest($request);
+        $form->handleRequest($request);
+
         if ($form->isValid()) {
             $em = $this->getDoctrine()->getEntityManager();
+
             $em->persist($entity);
             $em->flush();
+
             return $this->redirect($this->generateUrl('job_show', array(
                 'company' => $entity->getCompanySlug(),
                 'location' => $entity->getLocationSlug(),
@@ -155,9 +148,11 @@ class JobController extends Controller
                 'position' => $entity->getPositionSlug()
             )));
         }
-        return $this->render('job/new.html.twig', array(
+
+        return $this->render('Job/new.html.twig', array(
             'entity' => $entity,
             'form'   => $form->createView()
         ));
     }
+
 }
