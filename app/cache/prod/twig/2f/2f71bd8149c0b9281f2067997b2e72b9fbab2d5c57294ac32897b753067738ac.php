@@ -64,7 +64,10 @@ class __TwigTemplate_c92bcd20929b0a79ce04e24d6ea14760f49ea035c1601330e0e97439392
         foreach ($context['_seq'] as $context["_key"] => $context["category"]) {
             // line 11
             echo "            <div>
-                <div class=\"category\">
+                <div class=\"category_";
+            // line 12
+            echo twig_escape_filter($this->env, $this->getAttribute($context["category"], "slug", array()), "html", null, true);
+            echo "\">
                     <div class=\"feed\">
                         <a href=\"\">Feed</a>
                     </div>
@@ -78,7 +81,7 @@ class __TwigTemplate_c92bcd20929b0a79ce04e24d6ea14760f49ea035c1601330e0e97439392
 
                 ";
             // line 19
-            $this->loadTemplate("EnsSimonBundle:Job:list.html.twig", ":job:index.html.twig", 19)->display(array_merge($context, array("jobs" => $this->getAttribute($context["category"], "activejobs", array()))));
+            $this->loadTemplate(":job:list.html.twig", ":job:index.html.twig", 19)->display(array_merge($context, array("jobs" => $this->getAttribute($context["category"], "activejobs", array()))));
             // line 20
             echo "
                 ";
@@ -128,7 +131,7 @@ class __TwigTemplate_c92bcd20929b0a79ce04e24d6ea14760f49ea035c1601330e0e97439392
 
     public function getDebugInfo()
     {
-        return array (  115 => 29,  100 => 27,  91 => 23,  88 => 22,  86 => 21,  83 => 20,  81 => 19,  73 => 16,  66 => 11,  49 => 10,  46 => 9,  43 => 8,  37 => 5,  32 => 4,  29 => 3,  11 => 1,);
+        return array (  118 => 29,  103 => 27,  94 => 23,  91 => 22,  89 => 21,  86 => 20,  84 => 19,  76 => 16,  69 => 12,  66 => 11,  49 => 10,  46 => 9,  43 => 8,  37 => 5,  32 => 4,  29 => 3,  11 => 1,);
     }
 }
 /* {% extends 'EnsSimonBundle::layout.html.twig' %}*/
@@ -142,14 +145,14 @@ class __TwigTemplate_c92bcd20929b0a79ce04e24d6ea14760f49ea035c1601330e0e97439392
 /*     <div id="jobs">*/
 /*         {% for category in categories %}*/
 /*             <div>*/
-/*                 <div class="category">*/
+/*                 <div class="category_{{ category.slug }}">*/
 /*                     <div class="feed">*/
 /*                         <a href="">Feed</a>*/
 /*                     </div>*/
 /*                     <h1><a href="{{ path('EnsSimonBundle_category', { 'slug': category.slug }) }}">{{ category.name }}</a></h1>*/
 /*                 </div>*/
 /* */
-/*                 {% include 'EnsSimonBundle:Job:list.html.twig' with {'jobs': category.activejobs} %}*/
+/*                 {% include ':job:list.html.twig' with {'jobs': category.activejobs} %}*/
 /* */
 /*                 {% if category.morejobs %}*/
 /*                     <div class="more_jobs">*/

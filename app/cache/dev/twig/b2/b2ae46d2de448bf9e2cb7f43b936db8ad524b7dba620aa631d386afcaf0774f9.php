@@ -15,8 +15,8 @@ class __TwigTemplate_42d1b5347b0b0cba6b532ac534ec2e7b9c03f6388ecd0498e6484793956
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_4a316152a1242b4c8d64add7aba66fbedc0b88f4a9f5f35b7914369293d5b63b = $this->env->getExtension("native_profiler");
-        $__internal_4a316152a1242b4c8d64add7aba66fbedc0b88f4a9f5f35b7914369293d5b63b->enter($__internal_4a316152a1242b4c8d64add7aba66fbedc0b88f4a9f5f35b7914369293d5b63b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "WebProfilerBundle:Profiler:toolbar_js.html.twig"));
+        $__internal_b0c67cc68de6799035502f375606a271c5898fc8199f5b3cf42fd2092aeefe8b = $this->env->getExtension("native_profiler");
+        $__internal_b0c67cc68de6799035502f375606a271c5898fc8199f5b3cf42fd2092aeefe8b->enter($__internal_b0c67cc68de6799035502f375606a271c5898fc8199f5b3cf42fd2092aeefe8b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "WebProfilerBundle:Profiler:toolbar_js.html.twig"));
 
         // line 1
         echo "<div id=\"sfwdt";
@@ -130,7 +130,7 @@ class __TwigTemplate_42d1b5347b0b0cba6b532ac534ec2e7b9c03f6388ecd0498e6484793956
 /*]]>*/</script>
 ";
         
-        $__internal_4a316152a1242b4c8d64add7aba66fbedc0b88f4a9f5f35b7914369293d5b63b->leave($__internal_4a316152a1242b4c8d64add7aba66fbedc0b88f4a9f5f35b7914369293d5b63b_prof);
+        $__internal_b0c67cc68de6799035502f375606a271c5898fc8199f5b3cf42fd2092aeefe8b->leave($__internal_b0c67cc68de6799035502f375606a271c5898fc8199f5b3cf42fd2092aeefe8b_prof);
 
     }
 

@@ -112,7 +112,7 @@
   'WebProfilerBundle:Profiler:toolbar_redirect.html.twig' => 'C:\\wamp\\www\\simon_arques_jobeet\\vendor\\symfony\\symfony\\src\\Symfony\\Bundle\\WebProfilerBundle/Resources/views/Profiler/toolbar_redirect.html.twig',
   'WebProfilerBundle:Router:panel.html.twig' => 'C:\\wamp\\www\\simon_arques_jobeet\\vendor\\symfony\\symfony\\src\\Symfony\\Bundle\\WebProfilerBundle/Resources/views/Router/panel.html.twig',
   '::base.html.twig' => 'C:\\wamp\\www\\simon_arques_jobeet\\app/Resources\\views/base.html.twig',
-  ':Category:show.html.twig' => 'C:\\wamp\\www\\simon_arques_jobeet\\app/Resources\\views/Category/show.html.twig',
+  ':category:show.html.twig' => 'C:\\wamp\\www\\simon_arques_jobeet\\app/Resources\\views/category/show.html.twig',
   ':default:index.html.twig' => 'C:\\wamp\\www\\simon_arques_jobeet\\app/Resources\\views/default/index.html.twig',
   ':job:edit.html.twig' => 'C:\\wamp\\www\\simon_arques_jobeet\\app/Resources\\views/job/edit.html.twig',
   ':job:index.html.twig' => 'C:\\wamp\\www\\simon_arques_jobeet\\app/Resources\\views/job/index.html.twig',

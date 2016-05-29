@@ -63,7 +63,7 @@ class __TwigTemplate_cdc576a1211fef64b13ed4ec54b31fb67d1e89f5ffd4d65b62ba80a7395
                     <div>
                         <a href=\"";
         // line 30
-        echo $this->env->getExtension('routing')->getPath("job_index");
+        echo $this->env->getExtension('routing')->getPath("job_new");
         echo "\">Post a Job</a>
                     </div>
                 </div>
@@ -228,7 +228,7 @@ class __TwigTemplate_cdc576a1211fef64b13ed4ec54b31fb67d1e89f5ffd4d65b62ba80a7395
 /*                 <div class="post">*/
 /*                     <h2>Ask for people</h2>*/
 /*                     <div>*/
-/*                         <a href="{{ path('job_index') }}">Post a Job</a>*/
+/*                         <a href="{{ path('job_new') }}">Post a Job</a>*/
 /*                     </div>*/
 /*                 </div>*/
 /* */
