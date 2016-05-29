@@ -1,6 +1,6 @@
 <?php
 
-/* job/edit.html.twig */
+/* Job/edit.html.twig */
 class __TwigTemplate_df789f2997df109ccdb2730fe9afc62dcb72c849446cf4b2abea30c5cf858ed8 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -8,7 +8,7 @@ class __TwigTemplate_df789f2997df109ccdb2730fe9afc62dcb72c849446cf4b2abea30c5cf8
         parent::__construct($env);
 
         // line 1
-        $this->parent = $this->loadTemplate("EnsSimonBundle::layout.html.twig", "job/edit.html.twig", 1);
+        $this->parent = $this->loadTemplate("EnsSimonBundle::layout.html.twig", "Job/edit.html.twig", 1);
         $this->blocks = array(
             'field_errors' => array($this, 'block_field_errors'),
             'stylesheets' => array($this, 'block_stylesheets'),
@@ -23,23 +23,23 @@ class __TwigTemplate_df789f2997df109ccdb2730fe9afc62dcb72c849446cf4b2abea30c5cf8
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_ad7c68ece4abb99d6c7cec7b444cc2b8756d38c85672d68c235a2f45c99050cf = $this->env->getExtension("native_profiler");
-        $__internal_ad7c68ece4abb99d6c7cec7b444cc2b8756d38c85672d68c235a2f45c99050cf->enter($__internal_ad7c68ece4abb99d6c7cec7b444cc2b8756d38c85672d68c235a2f45c99050cf_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "job/edit.html.twig"));
+        $__internal_576eece24eb9081e5dafcb72697cbd928df2188b952643e09c0008881e0e685b = $this->env->getExtension("native_profiler");
+        $__internal_576eece24eb9081e5dafcb72697cbd928df2188b952643e09c0008881e0e685b->enter($__internal_576eece24eb9081e5dafcb72697cbd928df2188b952643e09c0008881e0e685b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "Job/edit.html.twig"));
 
         // line 5
         $this->env->getExtension('form')->renderer->setTheme((isset($context["edit_form"]) ? $context["edit_form"] : $this->getContext($context, "edit_form")), array(0 => $this));
         // line 1
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_ad7c68ece4abb99d6c7cec7b444cc2b8756d38c85672d68c235a2f45c99050cf->leave($__internal_ad7c68ece4abb99d6c7cec7b444cc2b8756d38c85672d68c235a2f45c99050cf_prof);
+        $__internal_576eece24eb9081e5dafcb72697cbd928df2188b952643e09c0008881e0e685b->leave($__internal_576eece24eb9081e5dafcb72697cbd928df2188b952643e09c0008881e0e685b_prof);
 
     }
 
     // line 7
     public function block_field_errors($context, array $blocks = array())
     {
-        $__internal_99903c8b4fd616aa2398c2a9fb078729bd83a57545a91f31d3a96691482f326e = $this->env->getExtension("native_profiler");
-        $__internal_99903c8b4fd616aa2398c2a9fb078729bd83a57545a91f31d3a96691482f326e->enter($__internal_99903c8b4fd616aa2398c2a9fb078729bd83a57545a91f31d3a96691482f326e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "field_errors"));
+        $__internal_22e19c0bfd72633889e8b3764a0ac66f0db07a7794c398092745e24e1faba86a = $this->env->getExtension("native_profiler");
+        $__internal_22e19c0bfd72633889e8b3764a0ac66f0db07a7794c398092745e24e1faba86a->enter($__internal_22e19c0bfd72633889e8b3764a0ac66f0db07a7794c398092745e24e1faba86a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "field_errors"));
 
         // line 8
         echo "    ";
@@ -71,15 +71,15 @@ class __TwigTemplate_df789f2997df109ccdb2730fe9afc62dcb72c849446cf4b2abea30c5cf8
         echo "    ";
         echo trim(preg_replace('/>\s+</', '><', ob_get_clean()));
         
-        $__internal_99903c8b4fd616aa2398c2a9fb078729bd83a57545a91f31d3a96691482f326e->leave($__internal_99903c8b4fd616aa2398c2a9fb078729bd83a57545a91f31d3a96691482f326e_prof);
+        $__internal_22e19c0bfd72633889e8b3764a0ac66f0db07a7794c398092745e24e1faba86a->leave($__internal_22e19c0bfd72633889e8b3764a0ac66f0db07a7794c398092745e24e1faba86a_prof);
 
     }
 
     // line 19
     public function block_stylesheets($context, array $blocks = array())
     {
-        $__internal_3aff5e88f97d67c9ddc4f397be8f7b5632409d9392a36845aac15b04e4ab902d = $this->env->getExtension("native_profiler");
-        $__internal_3aff5e88f97d67c9ddc4f397be8f7b5632409d9392a36845aac15b04e4ab902d->enter($__internal_3aff5e88f97d67c9ddc4f397be8f7b5632409d9392a36845aac15b04e4ab902d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
+        $__internal_cbadc6d718153cb0ae909b2353a44f28645c13ad600806cdd4eddbec2e323ff7 = $this->env->getExtension("native_profiler");
+        $__internal_cbadc6d718153cb0ae909b2353a44f28645c13ad600806cdd4eddbec2e323ff7->enter($__internal_cbadc6d718153cb0ae909b2353a44f28645c13ad600806cdd4eddbec2e323ff7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
         // line 20
         echo "    ";
@@ -91,21 +91,21 @@ class __TwigTemplate_df789f2997df109ccdb2730fe9afc62dcb72c849446cf4b2abea30c5cf8
         echo "\" type=\"text/css\" media=\"all\" />
 ";
         
-        $__internal_3aff5e88f97d67c9ddc4f397be8f7b5632409d9392a36845aac15b04e4ab902d->leave($__internal_3aff5e88f97d67c9ddc4f397be8f7b5632409d9392a36845aac15b04e4ab902d_prof);
+        $__internal_cbadc6d718153cb0ae909b2353a44f28645c13ad600806cdd4eddbec2e323ff7->leave($__internal_cbadc6d718153cb0ae909b2353a44f28645c13ad600806cdd4eddbec2e323ff7_prof);
 
     }
 
     // line 24
     public function block_content($context, array $blocks = array())
     {
-        $__internal_686c7833806ee4d26e72697b8e79d2271f2682bcfb329674a61b9760eeb06b77 = $this->env->getExtension("native_profiler");
-        $__internal_686c7833806ee4d26e72697b8e79d2271f2682bcfb329674a61b9760eeb06b77->enter($__internal_686c7833806ee4d26e72697b8e79d2271f2682bcfb329674a61b9760eeb06b77_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
+        $__internal_fdb502a6f881f78fb82cbab842c28760ed4571103ca334a01af6cf5d5477d445 = $this->env->getExtension("native_profiler");
+        $__internal_fdb502a6f881f78fb82cbab842c28760ed4571103ca334a01af6cf5d5477d445->enter($__internal_fdb502a6f881f78fb82cbab842c28760ed4571103ca334a01af6cf5d5477d445_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
 
         // line 25
         echo "    <h1>Job edit</h1>
     <form action=\"";
         // line 26
-        echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("job_update", array("id" => $this->getAttribute((isset($context["entity"]) ? $context["entity"] : $this->getContext($context, "entity")), "id", array()))), "html", null, true);
+        echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("job_update", array("token" => $this->getAttribute((isset($context["job"]) ? $context["job"] : $this->getContext($context, "job")), "token", array()))), "html", null, true);
         echo "\" method=\"post\" ";
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock((isset($context["edit_form"]) ? $context["edit_form"] : $this->getContext($context, "edit_form")), 'enctype');
         echo ">
@@ -305,13 +305,13 @@ class __TwigTemplate_df789f2997df109ccdb2730fe9afc62dcb72c849446cf4b2abea30c5cf8
     </form>
 ";
         
-        $__internal_686c7833806ee4d26e72697b8e79d2271f2682bcfb329674a61b9760eeb06b77->leave($__internal_686c7833806ee4d26e72697b8e79d2271f2682bcfb329674a61b9760eeb06b77_prof);
+        $__internal_fdb502a6f881f78fb82cbab842c28760ed4571103ca334a01af6cf5d5477d445->leave($__internal_fdb502a6f881f78fb82cbab842c28760ed4571103ca334a01af6cf5d5477d445_prof);
 
     }
 
     public function getTemplateName()
     {
-        return "job/edit.html.twig";
+        return "Job/edit.html.twig";
     }
 
     public function isTraitable()
@@ -349,7 +349,7 @@ class __TwigTemplate_df789f2997df109ccdb2730fe9afc62dcb72c849446cf4b2abea30c5cf8
 /* */
 /* {% block content %}*/
 /*     <h1>Job edit</h1>*/
-/*     <form action="{{ path('job_update', { 'id': entity.id }) }}" method="post" {{ form_enctype(edit_form) }}>*/
+/*     <form action="{{ path('job_update', { 'token': job.token }) }}" method="post" {{ form_enctype(edit_form) }}>*/
 /*         <table id="job_form">*/
 /*             <tfoot>*/
 /*             <tr>*/

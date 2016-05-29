@@ -672,4 +672,48 @@ class Job extends \Ens\SimonBundle\Entity\Job implements \Doctrine\ORM\Proxy\Pro
         return parent::setTokenValue();
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    public function isExpired()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'isExpired', array());
+
+        return parent::isExpired();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function expiresSoon()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'expiresSoon', array());
+
+        return parent::expiresSoon();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getDaysBeforeExpires()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getDaysBeforeExpires', array());
+
+        return parent::getDaysBeforeExpires();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function publish()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'publish', array());
+
+        return parent::publish();
+    }
+
 }

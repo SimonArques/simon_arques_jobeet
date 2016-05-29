@@ -1,3 +1,4 @@
+
 job_index:
     path:     /
     defaults: { _controller: "EnsSimonBundle:Job:index" }
@@ -10,28 +11,42 @@ job_show:
         id:  \d+
     methods:  GET
 
-job_new:
-    path:     /new
-    defaults: { _controller: "EnsSimonBundle:Job:new" }
-    methods:  [GET, POST]
-
-job_edit:
-    path:     /{token}/edit
-    defaults: { _controller: "EnsSimonBundle:Job:edit" }
-    methods:  [GET, POST]
-
-job_delete:
-    path:     /{token}/delete
-    defaults: { _controller: "EnsSimonBundle:Job:delete" }
-    methods:  DELETE
-
-job_update:
-    path:     /{token}/update
-    defaults: { _controller: "EnsSimonBundle:Job:update" }
-    methods:  DELETE
-
 job_preview:
     path:  /{company}/{location}/{token}/{position}
     defaults: { _controller: "EnsSimonBundle:Job:preview" }
     requirements:
         token:  \w+
+
+job_new:
+    path:     /new
+    defaults: { _controller: "EnsSimonBundle:Job:new" }
+    methods:  [GET, POST]
+
+job_create:
+    path:     /create
+    defaults: { _controller: "EnsSimonBundle:Job:create" }
+    methods:  POST
+
+job_edit:
+    path:  /{token}/edit
+    defaults: { _controller: "EnsSimonBundle:Job:edit" }
+
+job_update:
+    path:  /{token}/update
+    defaults: { _controller: "EnsSimonBundle:Job:update" }
+    methods:  POST
+
+job_delete:
+    path:  /{token}/delete
+    defaults: { _controller: "EnsSimonBundle:Job:delete" }
+    methods:  POST
+
+job_publish:
+    path:  /{token}/publish
+    defaults: { _controller: "EnsSimonBundle:Job:publish" }
+    methods:  POST
+
+job_extend:
+    path:  /{token}/extend
+    defaults: { _controller: "EnsSimonBundle:Job:extend" }
+    methods:  POST

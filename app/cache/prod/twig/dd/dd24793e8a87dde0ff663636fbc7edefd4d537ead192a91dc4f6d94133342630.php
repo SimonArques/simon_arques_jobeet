@@ -84,7 +84,7 @@ class __TwigTemplate_7cd3690a30da94e55bf787b273cab22bdc0834a4930dc322b4d30aea338
         echo "    <h1>Job edit</h1>
     <form action=\"";
         // line 26
-        echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("job_update", array("id" => $this->getAttribute((isset($context["entity"]) ? $context["entity"] : null), "id", array()))), "html", null, true);
+        echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("job_update", array("token" => $this->getAttribute((isset($context["job"]) ? $context["job"] : null), "token", array()))), "html", null, true);
         echo "\" method=\"post\" ";
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock((isset($context["edit_form"]) ? $context["edit_form"] : null), 'enctype');
         echo ">
@@ -325,7 +325,7 @@ class __TwigTemplate_7cd3690a30da94e55bf787b273cab22bdc0834a4930dc322b4d30aea338
 /* */
 /* {% block content %}*/
 /*     <h1>Job edit</h1>*/
-/*     <form action="{{ path('job_update', { 'id': entity.id }) }}" method="post" {{ form_enctype(edit_form) }}>*/
+/*     <form action="{{ path('job_update', { 'token': job.token }) }}" method="post" {{ form_enctype(edit_form) }}>*/
 /*         <table id="job_form">*/
 /*             <tfoot>*/
 /*             <tr>*/

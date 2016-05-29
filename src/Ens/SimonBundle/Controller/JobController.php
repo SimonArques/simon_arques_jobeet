@@ -157,13 +157,14 @@ class JobController extends Controller
                 'position' => $job->getPositionSlug()
             )));
         }
-
         return $this->render('job/edit.html.twig', array(
-            'entity'      => $entity,
+            'job'      => $job,
             'edit_form'   => $editForm->createView(),
             'delete_form' => $deleteForm->createView(),
         ));
     }
+
+
 
     public function createAction(Request $request)
     {
@@ -187,11 +188,7 @@ class JobController extends Controller
         ));
     }
 
-        return $this->render(':job/new.html.twig', array(
-            'entity' => $entity,
-            'form'   => $form->createView()
-        ));
-    }
+
 
     public function previewAction($token)
     {
@@ -202,12 +199,78 @@ class JobController extends Controller
         }
         $deleteForm = $this->createDeleteForm($job->getId());
         $publishForm = $this->createPublishForm($job->getToken());
-
+        $extendForm = $this->createExtendForm($job->getToken());
         return $this->render('job/show.html.twig', array(
             'job'      => $job,
             'delete_form' => $deleteForm->createView(),
             'publish_form' => $publishForm->createView(),
+            'extend_form' => $extendForm->createView(),
         ));
+    }
+
+    public function publishAction(Request $request, $token)
+    {
+        $form = $this->createPublishForm($token);
+        $form->handleRequest($request);
+        if ($form->isValid()) {
+            $em = $this->getDoctrine()->getEntityManager();
+            $job = $em->getRepository('EnsSimonBundle:Job')->findOneByToken($token);
+            if (!$job) {
+                throw $this->createNotFoundException('Unable to find Job entity.');
+            }
+            $job->publish();
+            $em->persist($job);
+            $em->flush();
+            $this->addFlash('notice', 'Your job is now online for 30 days.');
+        }
+        return $this->redirect($this->generateUrl('job_preview', array(
+            'company' => $job->getCompanySlug(),
+            'location' => $job->getLocationSlug(),
+            'token' => $job->getToken(),
+            'position' => $job->getPositionSlug()
+        )));
+    }
+
+    private function createPublishForm($token)
+    {
+        return $this->createFormBuilder(array('token' => $token))
+            ->add('token', 'hidden')
+            ->getForm()
+            ;
+    }
+
+
+    public function extendAction(Request $request, $token)
+    {
+        $form = $this->createExtendForm($token);
+        $form->handleRequest($request);
+        if ($form->isValid()) {
+            $em = $this->getDoctrine()->getManager();
+            $job = $em->getRepository('EnsSimonBundle:Job')->findOneByToken($token);
+            if (!$job) {
+                throw $this->createNotFoundException('Unable to find Job entity.');
+            }
+            if (!$job->extend()) {
+                throw $this->createNotFoundException('Unable to find extend the Job.');
+            }
+            $em->persist($job);
+            $em->flush();
+            $this->addFlash('notice', sprintf('Your job validity has been extended until %s.',
+                $job->getExpiresAt()->format('m/d/Y')));
+        }
+        return $this->redirect($this->generateUrl('job_preview', array(
+            'company' => $job->getCompanySlug(),
+            'location' => $job->getLocationSlug(),
+            'token' => $job->getToken(),
+            'position' => $job->getPositionSlug()
+        )));
+    }
+    private function createExtendForm($token)
+    {
+        return $this->createFormBuilder(array('token' => $token))
+            ->add('token', 'hidden')
+            ->getForm()
+            ;
     }
 
 }

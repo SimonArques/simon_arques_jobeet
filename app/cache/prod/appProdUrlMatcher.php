@@ -87,6 +87,33 @@ class appProdUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirecta
             }
             not_job_delete:
 
+            // job_update
+            if (preg_match('#^/job/(?P<token>[^/]++)/update$#s', $pathinfo, $matches)) {
+                if ($this->context->getMethod() != 'DELETE') {
+                    $allow[] = 'DELETE';
+                    goto not_job_update;
+                }
+
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'job_update')), array (  '_controller' => 'Ens\\SimonBundle\\Controller\\JobController::updateAction',));
+            }
+            not_job_update:
+
+            // job_preview
+            if (preg_match('#^/job/(?P<company>[^/]++)/(?P<location>[^/]++)/(?P<token>\\w+)/(?P<position>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'job_preview')), array (  '_controller' => 'Ens\\SimonBundle\\Controller\\JobController::previewAction',));
+            }
+
+            // job_publish
+            if (preg_match('#^/job/(?P<token>[^/]++)/publish$#s', $pathinfo, $matches)) {
+                if ($this->context->getMethod() != 'POST') {
+                    $allow[] = 'POST';
+                    goto not_job_publish;
+                }
+
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'job_publish')), array (  '_controller' => 'Ens\\SimonBundle\\Controller\\JobController::publishAction',));
+            }
+            not_job_publish:
+
         }
 
         // EnsSimonBundle_category
