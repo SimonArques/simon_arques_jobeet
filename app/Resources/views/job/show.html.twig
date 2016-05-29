@@ -11,6 +11,9 @@
 {% endblock %}
 
 {% block content %}
+    {% if app.request.get('token') %}
+        {% include ':Job:admin.html.twig' with {'job': job} %}
+    {% endif %}
     <div id="job">
         <h1>{{ job.company }}</h1>
         <h2>{{ job.location }}</h2>
